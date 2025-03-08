@@ -1,0 +1,207 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size:14px;
+        line-height:1.4;
+    }
+}
+
+#blog-name-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+}
+
+#blog-name {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.meniu {
+    display: inline-block; 
+}
+
+.meniu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.meniu ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 15 px;
+    width: 120 px;
+    
+}
+
+.active, .meniu ul li:hover{
+    background-color: #5a5656;
+    border: 3px;
+    padding: 10px 0;
+    
+}
+
+.meniu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submeniu {
+    display:none;
+}
+
+.meniu ul li:hover .submeniu {
+    display:block;
+    position:absolute;
+    background-color: #333;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.meniu ul li:hover .submeniu ul {
+    display: block;
+    margin: 0%;
+
+}
+
+.meniu ul li:hover .submeniu ul li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px dotted #fff;
+}
+
+.subscribe-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li strong {
+    font-weight: bold;
+}
+
+
+
+form {
+    display: block;
+    align-self: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    border-color:#0056b3;
+    border-width: 3px;
+    background-color: beige;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form input[type="range"] {
+    width: 100%;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+form button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#feedBackContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+footer {
+    background-color: #dad3d3;
+    text-align: center;
+    color:#181616;
+    position:fixed;
+    padding:25px;
+    width: 100%;
+}

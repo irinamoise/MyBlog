@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jurnalul Irinei</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="blog-name-container">
+        <div id="blog-name">Jurnalul Irinei</div>
+        
+    </div>
+
+    <header>
+        <nav class="meniu">
+            <ul>  
+                <li class ="active"></li>
+                <li><a href="mainpage.html">Colecția "Despre"</a>
+                    <nav class="submeniu">
+                        <ul>
+                            <li><a href="articol1.html">Despre momente</a></li>
+                            <li><a href="articol2.html">Despre muze</a></li>
+                            <li><a href="articol3.html">Despre apusuri si amintiri</a></li>
+                            <li><a href="articol4.html">Despre ce-a fost si ce va veni</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="eu.html">Cine sunt eu?</a></li>
+                <li><a href="contact.html">Criticați-mă!</a></li>
+                <li><a href="epilog.html">Epilog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <p>Pentru indicatii, obiectii, reclamatii sau colaborari, nu ezitati sa ma contactati! </p>
+            <ul>
+                <li><strong>E-mail:</strong> <a href="mailto:moiseirina42@gmail.com">moiseirina42@gmail.com</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jurnalul_irinei/">@jurnalul_irinei</a></li>
+                <li><strong>Telefon:</strong> +40 77X XXX X06</li>
+                <li><strong><button id="subscribeButton" class="subscribe-button">Abonează-te</button></strong></li>
+            </ul>
+        </div>
+
+        <form action ="" id="feedbackForm">
+            <h2> Formular de Feedback</h2>
+            
+            <label for="nameInput">Nume:</label>
+            <input type="text" id="nameInput" placeholder="Introduceți numele">
+    
+            
+            <label for="feedbackInput">Feedback:</label>
+            <textarea id="feedbackInput" placeholder="Lăsați-mi feedbackul dvs."></textarea>
+    
+            
+            <label for="ratingInput">O nota (1-10):</label>
+            <input type="range" id="ratingInput" min="1" max="10">
+            
+            <h4>Veti mai reveni pe site?</h4>
+            
+            <label for="positiveInput">Cu siguranta!</label>
+            <input type="radio" id="positiveInput" name="feedbackType" value="positive">
+            
+            <label for="neutralInput">Nu sunt sigur</label>
+            <input type="radio" id="neutralInput" name="feedbackType" value="neutral">
+        
+            <label for="negativeInput">Nu prea cred</label>
+            <input type="radio" id="negativeInput" name="feedbackType" value="negative">
+    
+            
+            <label for="updatesInput">Doresc să primesc actualizări</label>
+            <input type="checkbox" id="updatesInput">
+            
+            <button type="submit">Trimite feedback</button>
+    </form>
+
+    <button id="ajaxButton" type="button">request: afisare feedback de la utilizatori</button>
+
+    <ul id="feedbackList"></ul>
+    <script src="contactscript.js"></script>
+
+    <br>
+    <br>
+    
+    </main>
+
+    <footer>
+        Copyright &copy; 2024 Irina Moise
+    </footer>
+    
+</body>
+</html>

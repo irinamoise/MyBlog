@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size:14px;
+        line-height:1.4;
+    }
+}
+
+main {
+    padding: 40px;
+    max-width: 1200px;
+    
+}
+
+article {
+    
+    margin-left: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5c5b5b;
+    margin-bottom: 20px;
+}
+
+a {
+    
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 0 auto;
+    
+}
+
+#commentsSection {
+    max-width: 500px;
+    margin-left: 0 auto;
+    padding: 20px;
+    
+}
+#comments {
+    margin-top: 20px;
+}
+
+.comment {
+    
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+#commentsList {
+    list-style-type: none; 
+    padding: 0; 
+    background-color: aqua;
+    display: table; 
+    width: 100%; 
+}
+
+#commentsList li {
+    display: table-row; 
+    border: 1px solid #ddd; 
+}
+
+#commentsList li::before {
+    content: "Comentariu: "; 
+    font-weight: bold; 
+    display: table-cell; 
+    padding-right: 10px;
+}
+
+#commentsList li::after {
+    content: attr(data-comment); 
+    display: table-cell; 
+}
+
+
+
+footer {
+    background-color: #dad3d3;
+    text-align: center;
+    color:#181616;
+    position:static;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}
